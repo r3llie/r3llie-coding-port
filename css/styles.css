@@ -6,6 +6,7 @@
  
 body {
  margin-top: 100px;
+ margin-bottom: 100px;
 }
  
 h1,
@@ -18,11 +19,25 @@ h3 {
 h1 {
  font-size: 96px;
 }
+@media (max-width: 576px) {
+    h1 {
+        font-size: 60px;
+    }
+}
  
 h2 {
  font-size: 48px;
+ text-align: left;
 }
- 
+
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+}
+  
 h3 {
  font-size: 24px;
  opacity: 0.7;
@@ -34,6 +49,13 @@ p {
  font-size: 18px;
  line-height: 1.5;
 }
+
+@media (max-width: 576px) {
+    p {
+        text-align: center;
+    }
+}
+ 
  
 .navigation-links {
  display: flex;
@@ -96,10 +118,14 @@ p {
  box-shadow: var(--box-shadow);
  color: white;
 }
-.mb-3 {
- text-align: left;
+@media (max-width: 576px) {
+    .app-link {
+        display: block;
+        text-align: center;
+        margin: 0 20px;
+    }
 }
  
 .navbar {
- padding-left: 50px;
+ padding-left: 10px;
 }

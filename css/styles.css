@@ -27,9 +27,7 @@ h1 {
  
 h2 {
  font-size: 48px;
- text-align: left;
 }
-
 
 @media (max-width: 576px) {
     h2 {
@@ -128,4 +126,13 @@ p {
  
 .navbar {
  padding-left: 10px;
+}
+
+.mb-3 {
+    text-align: left;
+}
+@media (max-width: 576px) {
+    .mb-3 {
+        text-align: center;
+    }
 }
